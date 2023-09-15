@@ -47,12 +47,12 @@ const char* ssid = "komputer";
 const char* password = "komputer123";
 
 // Initialize Telegram BOT
-#define BOTtoken "6087886617:AAEDfOj6YcSZl97gZZYbcILId98G5quA9Mg"  // your Bot Token (Get from Botfather)
+#define BOTtoken "6087886617:AAEDfOj6YcSZl97***********"  // your Bot Token (Get from Botfather)
 
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
 // message you
-#define CHAT_ID "5279776565" //id telegram
+#define CHAT_ID "your telegram id" //id telegram
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOTtoken, client);
