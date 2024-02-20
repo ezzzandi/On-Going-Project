@@ -67,7 +67,7 @@ void loop() {
     npkMillis = currentMillis;
   }
 
-  if (currentMillis - lcdMillis <= lcdPeriod) {
+  if (currentMillis - lcdMillis >= lcdPeriod) {
     lcdMillis = currentMillis;
     lcd.clear();
 
@@ -75,13 +75,13 @@ void loop() {
     lcd.print("NPK Reader");
     
     lcd.setCursor(0, 1);  //Set cursor to character 0 on line 2
-    lcd.print("Nitrogen: " + String(N) + " kg/mg");
+    lcd.print("N: " + String(N) + " kg/mg");
     
     lcd.setCursor(0, 2);  //Set cursor to character 0 on line 3
-    lcd.print("Phosphor: " + String(P) + " kg/mg");
+    lcd.print("P: " + String(P) + " kg/mg");
 
     lcd.setCursor(0, 3);  //Set cursor to character 0 on line 4
-    lcd.print("Kalium: " + String(K) + " kg/mg");
+    lcd.print("K: " + String(K) + " kg/mg");
   }
 }
 
